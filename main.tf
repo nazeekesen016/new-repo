@@ -22,10 +22,10 @@ resource "aws_instance" "jakshylyk" {
   }
 }
 
-# resource "aws_vpc" "vpc" {
-#   cidr_block = "10.0.0.0/16"
+resource "aws_vpc" "vpc" {
+  cidr_block = "10.0.0.0/16"
 
-#   tags = {
-#     name = var.name
-#   }
-# }
+  tags = {
+    name = var.name
+  }
+}
